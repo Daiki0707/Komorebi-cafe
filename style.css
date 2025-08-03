@@ -1,0 +1,636 @@
+@charset "UTF-8";
+
+/* ページ全体のスタイル
+------------------------------------------ */
+* {
+  line-height: 1.2;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  html {
+    font-size: 1vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  html {
+    font-size: calc(10 / 375 * 100vw);
+  }
+}
+
+body {
+  color: #47664C;
+  font-family: "Inter", "Poppins", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.2;
+  background: #FAF3E0;
+}
+
+a {
+  color: #47664C;
+  font-weight: 900;
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #47664C;
+  border-radius: 3rem;
+  height: 4rem;
+  width: 20rem;
+  margin: 0rem auto 1rem;
+  font-size: 1.3rem;
+  box-shadow: 2px 2px 0px rgba(71, 102, 76, 1);
+}
+
+@media (min-width: 768px) {
+    a {
+        height: 6rem;
+        width: 27rem;
+        font-size: 2.3rem;
+        box-shadow: 4px 6px 0px rgba(71, 102, 76, 1);
+    }
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+.contents_title {
+  font-size: 4rem;
+  line-height: 1;
+  text-align: center;
+  font-weight: 900;
+  @media (max-width: 767px) {
+    font-size: 2.6rem;
+    line-height: calc(39 / 26);  
+  }
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* 部品
+------------------------------------------ */
+
+/* コンテナ */
+.container {
+  padding: 0 1.6rem;
+  overflow: hidden;
+  position: relative;
+}
+
+/* flexbox */
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.animate__animated {
+  opacity: 0;
+}
+
+.no-sp {
+  display: none;
+}
+
+@media (min-width: 768px) {
+    .no-sp {
+        display: inline;
+  }
+}
+
+@media (min-width: 768px) {
+.no-pc {
+  display: none;
+}
+}
+
+ .paragraph {
+    font-weight: 600;
+    font-size: 1.7rem;
+ }
+
+ @media (min-width: 768px) {
+    .paragraph {
+        font-size: 3.5rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+ }
+
+/* header
+------------------------------------------ */
+.header {
+  width: 100%;
+  padding: 0 2vw;
+  height: 4rem;
+  position: fixed;
+  top: 0;
+  background: #47664C;
+  z-index: 1000;
+  color: #FAF3E0;
+}
+
+.header .contents_width {
+    padding-top: .3rem;
+}
+
+.header ul {
+    align-items: center;
+}
+
+.header li a {
+    color: #FAF3E0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: inline;
+}
+
+.header li:nth-of-type(1), .header li:nth-of-type(3) {
+    padding-top: .4rem;
+}
+
+.header .left {
+    font-family: 'Itim', cursive;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+@media (min-width: 768px) {
+    .header {
+        height: 7rem;
+    }
+    .header .contents_width {
+        padding-top: .5rem;
+    }
+    .header ul {
+        gap: 34vw;
+    }
+    .header .left {
+        font-size: 4.5rem;
+    }
+}
+
+/* main
+------------------------------------------ */
+
+/* top
+------------------------------------------ */
+.top {
+    padding: 5rem 0 10rem;
+    background: #47664C;
+    color: #FAF3E0;
+    text-align: center;
+    position: relative;
+}
+
+.openingHours {
+    padding: 3rem;
+    font-size: 1.5rem;
+}
+
+.kanji {
+    font-family: "Yuji Hentaigana Akebono", serif;
+  font-weight: 400;
+  font-style: normal;
+    position: relative;
+    z-index: 1;
+    font-size: 20rem;
+    opacity: .3;
+    line-height: .9;
+    text-align: center;
+}
+
+.top .kanji {
+    padding-bottom: 6rem;
+}
+
+.scrolling-text {
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: absolute;
+  bottom: 20rem;
+  width: 100%;
+}
+
+.scrolling-text-inner {
+  display: flex;
+  white-space: nowrap;
+  will-change: transform;
+  transition: transform 0.1s linear;
+}
+
+.scrolling-text p {
+  font-size: 2rem;
+  font-family: 'Itim', cursive;
+  margin: 0;
+  padding-right: 2rem;
+}
+
+.top .bottom {
+    font-size: 1.3rem;
+    font-weight: 200;
+}
+
+@media (min-width: 768px) {
+    .top {
+        padding: 10rem 0 20rem;
+    }
+    .scrolling-text {
+        bottom: 42rem;
+    }
+    .scrolling-text p {
+        font-size: 4rem;
+    }
+    .kanji {
+        font-size: 40vw;
+    }
+    .top .kanji {
+        padding-bottom: 8rem;
+    }
+    .top .bottom {
+        font-size: 1.5rem;
+    }
+}
+
+/* image
+------------------------------------------ */
+.images {
+    bottom: 9rem;
+    margin-bottom: -14rem;
+}
+.images .position {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.images .swiper img {
+    border-radius: 1rem;
+    border: 2px solid #47664C;
+}
+
+.swiper-prev-pagination-next {
+  position: relative;
+  width: 8rem;
+  height: 5rem;
+  align-items: center;
+  margin: 1rem auto;
+}
+
+.swiper-button-next,
+.swiper-button-prev,
+button {
+  position: static;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  border: 2px solid #47664C;
+  color: #47664C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 2.3rem;
+  box-shadow: 2px 2px 0px rgba(71, 102, 76, 1);
+}
+
+.swiper-button-next {
+    padding-left: .3rem;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+
+@media (min-width: 768px) {
+    .images {
+        bottom: 16rem;
+    }
+    .images .position {
+        width: 75%;
+    }
+    .swiper-prev-pagination-next {
+        margin: 1rem 1rem 1rem auto;
+    }
+}
+
+/* intro1
+------------------------------------------ */
+.introduction {
+    border-bottom: 2px solid #47664C;
+    padding-bottom: 5rem;
+}
+
+.introduction p {
+    position: relative;
+    bottom: 3rem;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .introduction {
+        padding-bottom: 15rem;
+    }
+    .introduction p {
+        bottom: 9rem;
+    }
+}
+
+/* intro2 $ 3
+------------------------------------------ */
+.introduction2 , .introduction3 {
+    padding: 5rem  1.6rem 8rem;
+    border-bottom: 2px solid #47664C;
+}
+
+.introduction2 p , .introduction3 p {
+    text-align: center;
+    margin-bottom: 7rem;
+}
+
+/* style.css */
+.image-stack {
+  position: relative;
+  width: 70vw;
+  height: 100vw;
+  margin: auto;
+}
+
+.image-item {
+  width: 70vw;
+  height: 90vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 2px solid #47664C;
+}
+
+.image-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.controls {
+  text-align: center;
+  margin-top: 20px;
+  justify-content: center;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+    .introduction2, .introduction3 {
+        padding: 20rem 1.6rem 8rem;
+    }
+    .introduction2 ul, .introduction3 ul {
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+    }
+    .introduction2 .paragraph, .introduction3 .paragraph {
+        font-size: 3rem;
+    }
+    .image-stack {
+        width: 42vw;
+        height: 57vw;
+    }
+    .image-item {
+        width: 35vw;
+        height: 55vw;
+    }
+    .controls {
+        margin-right: 7vw;
+    }
+}
+
+/* menu
+------------------------------------------ */
+.menu {
+    padding: 0 0 5rem;
+}
+
+.menu li {
+    border-bottom: 2px solid #47664C;
+}
+
+.menu h3 {
+    padding: 1.5rem;
+}
+
+.menu h3::after {
+    content: '＋';
+    position: absolute;
+    right: 0;
+    transform: translate(-80%, -11%);
+    font-size: 2rem;
+}
+
+.menu h3.open::after {
+    content: 'ー';
+}
+
+.menu dl {
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding-bottom: 2rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .menu {
+        padding: 0;
+    }
+    .menu li div {
+        display: block !important;
+    }
+    .menu h3::after {
+        display: none;
+    }
+    .menu ul {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        justify-content: center;
+    }
+    .menu h3 {
+        padding: 1.5rem 0;
+        width: 95%;
+        font-size: 3rem;
+    }
+    .menu dl {
+        font-size: 1.8rem;
+    }
+}
+
+/* sns
+------------------------------------------ */
+.sns {
+    padding-bottom: 5rem;
+}
+
+.sns ul {
+    display: grid;
+    grid-template-columns: 46.2% 46.2%;
+    grid-template-rows: 50% 50%;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.sns ul a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  height: 20.5rem;
+  width: 15rem;
+  border: none;
+  box-shadow: none;
+  margin-top: 3rem;
+}
+
+.sns li {
+    border: 2px solid #47664C;
+    border-radius: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    overflow: hidden;
+}
+
+.sns li img {
+    border-radius: 1.7rem 1.7rem 0 0;
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 1.7rem 1.7rem 0 0;
+    display: block;
+}
+
+.sns li .flex {
+    justify-content: center;
+    gap: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+.sns .description {
+    height: 11.5rem;
+}
+
+.sns .post {
+    padding: 1.5rem;
+}
+
+.sns .heart::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f004";
+  font-weight: 900;
+  margin-right: 0.5rem;
+}
+
+.sns .comment::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f4ad";
+  font-weight: 900;
+  margin-right: 0.5rem;
+}
+
+.sns a {
+    margin-top: 7rem;
+}
+
+@media (min-width: 768px) {
+    .sns {
+        padding: 10rem 1.6rem;
+    }
+    .sns ul {
+        display: flex;
+    }
+    .sns ul a {
+        width: 23vw;
+        height: 35.5vw;
+    }
+    .sns li {
+        font-size: 1.8vw;
+    }
+    .sns li img {
+        height: 20vw;
+    }
+    .sns .description {
+        height: 15.5vw;
+    }
+}
+
+/* footer
+------------------------------------------ */
+footer {
+    background: #47664C;
+    color: #FAF3E0;
+    text-align: center;
+    padding: 5rem 1.6rem 1rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+footer .part {
+    padding-bottom: 3rem;
+}
+
+footer h2 {
+    font-size: 1.7rem;
+    font-weight: 500;
+    padding-bottom: 1rem;
+}
+
+footer a {
+    color: #FAF3E0;
+    font-size: 2rem;
+}
+
+footer .map {
+    font-size: 1.3rem;
+    font-weight: 400;
+    border: none;
+    box-shadow: none;
+    height: 3rem;
+    margin: .3rem auto;
+}
+
+footer span {
+    color: #263829;
+}
+
+@media (min-width: 768px) {
+    footer {
+        font-size: 1.8rem;
+    }
+    footer .category {
+        display: flex;
+        justify-content: space-between;
+    }
+    footer h2 {
+        font-size: 3rem;
+    }
+    footer a {
+        font-size: 3rem;
+    }
+}

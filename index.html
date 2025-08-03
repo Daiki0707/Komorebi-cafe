@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Komorebi</title>
+        <meta name="description" content="Komorebi Cafe is a cozy Japanese-style café in Asakusa, Tokyo, offering matcha drinks, traditional sweets, and a peaceful atmosphere.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Oleo+Script:wght@400;700&family=Itim&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Yuji+Hentaigana+Akebono&display=swap" rel="stylesheet">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
+<!-- Animate.css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<!-- Swiper -->
+<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+<!-- CSS -->
+<link rel="stylesheet" href="./css/style.css">
+
+<script>
+    FontAwesomeConfig = { searchPseudoElements: true };
+</script>
+
+    </head>
+
+    <body  class="vsc-initialized">
+                <header class="header container">
+            <div class="contents_width">
+                <nav class="nav">
+                    <ul class="flex">
+                        <li><a href="#menu">MENU</a></li>
+                        <li><h1 class="left">Komorebi</h1></li>
+                        <li><a href="#book">BOOK</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="top container">
+                <div id="status" class="openingHours">Loading...</div>
+                <p class="kanji">茶</p>
+                <div class="scrolling-text">
+                    <div class="scrolling-text-inner">
+                        <p>WHERE MATCHA MEETS THE SEA BREEZE WHERE MATCHA MEETS THE SEA BREEZE WHERE MATCHA MEETS THE SEA BREEZE WHERE MATCHA MEETS THE SEA BREEZE WHERE MATCHA MEETS THE SEA BREEZE WHERE MATCHA MEETS THE SEA BREEZE</p>
+                    </div>
+                </div>
+                <p class="bottom">Keep scrolling for <br>the good stuff.</p>
+            </section>
+
+            <div class="images container">
+                <div class="position">
+                    <div class="swiper swiper-initialized swiper-horizontal swiper-ios">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide1">
+                                <img src="images/sweet3.jpeg" alt="">
+                            </div>
+                            <div class="swiper-slide slide2">
+                                <img src="images/room1.jpeg" alt="">
+                            </div>
+                            <div class="swiper-slide slide3">
+                                <img src="images/room2.jpeg" alt="">
+                            </div>
+                            </div>
+                            <div class="swiper-prev-pagination-next flex">
+                                <div class="swiper-button-prev"><i class="fas fa-chevron-left"></i></div>
+                                <div class="swiper-button-next"><i class="fas fa-chevron-right"></i></div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+            <section class="introduction container">
+                <svg viewBox="0 0 500 250" class="curved-heading">
+                    <defs>
+                    <path id="curvePath" d="M 50,0 Q 250,300 450,0" />
+                    </defs>
+                    <text font-size="24" font-weight="900" letter-spacing=".1em" fill="#47664C">
+                    <textPath href="#curvePath" startOffset="50%" text-anchor="middle">
+                        KONNICHIWA & ARIGATOU
+                    </textPath>
+                    </text>
+                </svg>
+
+                <p class="paragraph">Komorebi is for peaceful mornings, heartfelt chats, warm cups of matcha, and moments that linger like sunlight through the trees.</p>
+                <a href="book" class="bookking">BOOK A TABLE</a>
+            </section>
+
+
+
+            <section class="introduction2 container">
+                <ul>
+                    <li>
+                        <p class="kanji">抹</p>
+                        <p class="paragraph">Tucked away in a quiet corner of town, Komorebi offers a peaceful retreat from morning till sunset.</p>
+                    </li>
+                    <li>
+                        <div id="image-stack-1" class="image-stack">
+                    <div class="image-item"><img src="images/drink1.jpeg" alt="イメージ1" /></div>
+                    <div class="image-item"><img src="images/sweet1.jpeg" alt="イメージ2" /></div>
+                    <div class="image-item"><img src="images/sweet2.jpeg" alt="イメージ3" /></div>
+                </div>
+                <div class="controls flex">
+                    <button id="prev1"><i class="fas fa-chevron-left"></i></button>
+                    <button id="next1"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="introduction3 container">
+                <ul>
+                    <li>
+                        <p class="kanji">浅</p>
+                        <p class="paragraph">You’ll find us tucked in a quiet alley near Asakusa, serving an all-day brunch menu, baked treats, and carefully brewed matcha.</p>
+                    </li>
+                    <li>
+                    <div id="image-stack-2" class="image-stack">
+                    <div class="image-item"><img src="images/drink2.jpeg" alt="イメージ1" /></div>
+                    <div class="image-item"><img src="images/sweet4.jpeg" alt="イメージ2" /></div>
+                    <div class="image-item"><img src="images/drink3.jpeg" alt="イメージ3" /></div>
+                </div>
+                <div class="controls flex">
+                    <button id="prev2"><i class="fas fa-chevron-left"></i></button>
+                    <button id="next2"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="menu container" id="menu">
+                <ul>
+                    <li>
+                        <h3 class="paragraph accordion_title">Matcha & Japanese Teas</h3>
+                        <div>
+                        <dl class="flex">
+                        <dt>Matcha Latte (Hot/Iced)</dt>
+                        <dd>$4.80</dd>
+                        </dl>
+                        <dl class="flex">
+                        <dt>Ceremonial Matcha (Whisked)	</dt>
+                        <dd>$5.50</dd>
+                        </dl>
+                        <dl class="flex">
+                        <dt>Hojicha Latte</dt>
+                        <dd>$4.50</dd>
+                        </dl>
+                        <dl class="flex">
+                        <dt>Genmaicha (Brown Rice Green Tea)</dt>
+                        <dd>$3.80</dd>
+                        </dl>
+                        <dl class="flex">
+                        <dt>Yuzu Sencha</dt>
+                        <dd>$4.20</dd>
+                        </dl>
+                        </div>
+                    </li>
+                    <li>
+                        <h3 class="paragraph accordion_title">Coffee & Espresso</h3>
+                        <div>
+                        <dl class="flex">
+                        <dt>Komorebi Drip Coffee</dt>
+                        <dd>$3.80</dd>
+                        </dl>
+                        <dl class="flex">
+                        <dt>Espresso (Single/Double)</dt>
+                        <dd>$2.80 / $3.50</dd>
+                        </dl>
+                        <dl class="flex">
+                        <dt>Iced Black Coffee (Kyoto Style)</dt>
+                        <dd>$4.00</dd>
+                        </dl>
+                        <dl class="flex">
+                        <dt>Coffee Jelly Latte</dt>
+                        <dd>$5.20</dd>
+                        </dl>
+                        <dl class="flex">
+                        <dt>Dirty Matcha (Espresso x Matcha)</dt>
+                        <dd>$5.00</dd>
+                        </dl>
+                        </div>
+                    </li>
+                    <li>
+                        <h3 class="paragraph accordion_title">Signature Cold Drinks</h3>
+                        <div>
+                        <dl class="flex">
+                        <dt>Matcha Lemonade</dt>
+                        <dd>$4.80</dd>
+                        </dl>
+                        <dl class="flex">
+                        <dt>Kinako Milkshake</dt>
+                        <dd>$5.50</dd>
+                        </dl>
+                        <dl class="flex">
+                        <dt>Iced Yuzu Soda</dt>
+                        <dd>$4.50</dd>
+                        </dl>
+                        <dl class="flex">
+                        <dt>Cold Brew with Cream</dt>
+                        <dd>$4.80</dd>
+                        </dl>
+                        <dl class="flex">
+                        <dt>Sakura Fizz (Seasonal)</dt>
+                        <dd>$5.00</dd>
+                        </dl>
+                        </div>
+                    </li>
+                    <li>
+                        <h3 class="paragraph accordion_title">Brunch & Light Meals</h3>
+                        <div>
+                        <dl class="flex">
+                        <dt>Tamago Sando (Japanese Egg Sandwich)</dt>
+                        <dd>$6.80</dd>
+                        </dl>
+                        <dl class="flex">
+                        <dt>Miso Avocado Toast</dt>
+                        <dd>$7.20</dd>
+                        </dl>
+                        <dl class="flex">
+                        <dt>Chicken Katsu Wrap</dt>
+                        <dd>$8.00</dd>
+                        </dl>
+                        <dl class="flex">
+                        <dt>Ochazuke Bowl (Rice & Tea Broth)</dt>
+                        <dd>$7.50</dd>
+                        </dl>
+                        <dl class="flex">
+                        <dt>Onigiri Set (2 Rice Balls + Pickles)</dt>
+                        <dd>$6.50</dd>
+                        </dl>
+                        </div>
+                    </li>
+                    <li>
+                        <h3 class="paragraph accordion_title">Sweets & Treats</h3>
+                        <div>
+                        <dl class="flex">
+                        <dt>Matcha Tiramisu</dt>
+                        <dd>$5.80</dd>
+                        </dl>
+                        <dl class="flex">
+                        <dt>Dorayaki Pancakes</dt>
+                        <dd>$5.00</dd>
+                        </dl>
+                        <dl class="flex">
+                        <dt>Black Sesame Cheesecake</dt>
+                        <dd>$6.00</dd>
+                        </dl>
+                        <dl class="flex">
+                        <dt>Warabi Mochi</dt>
+                        <dd>$4.80</dd>
+                        </dl>
+                        <dl class="flex">
+                        <dt>Ice Cream Trio (Matcha, Kinako, Yuzu)</dt>
+                        <dd>$5.50</dd>
+                        </dl>
+                        </div>
+                    </li>
+                    <li>
+                    <h3 class="paragraph accordion_title">Kids</h3>
+                    <div>
+                        <dl class="flex">
+                        <dt>Mini Udon Set (Udon, Rice Ball, Jelly)</dt>
+                        <dd>$6.50</dd>
+                        </dl>
+                        <dl class="flex">
+                        <dt>Kids Curry Rice</dt>
+                        <dd>$5.80</dd>
+                        </dl>
+                        <dl class="flex">
+                        <dt>Bento with Octopus Sausage</dt>
+                        <dd>$5.50</dd>
+                        </dl>
+                        <dl class="flex">
+                        <dt>Furikake Rice & Fried Chicken</dt>
+                        <dd>$6.00</dd>
+                        </dl>
+                        <dl class="flex">
+                        <dt>Mini Matcha Pancakes with Ice Cream</dt>
+                        <dd>$4.80</dd>
+                        </dl>
+                    </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="sns container">
+                <p class="kanji no-pc">草</p>
+                <ul class="flex">
+                    <a href="https://www.instagram.com" class="insta-block">
+                    <li>
+                        <img src="images/room1.jpeg" alt="1">
+                        <div class="description">
+                        <p class="post">Style meets good company at Komorebi</p>
+                        <div class="flex">
+                            <p class="heart">52</p>
+                            <p class="comment">0</p>
+                        </div>
+                        </div>
+                    </li>
+                    </a>
+                    <a href="https://www.instagram.com" class="insta-block">
+                    <li>
+                        <img src="images/room2.jpeg" alt="1">
+                        <div class="description">
+                        <p class="post">It is recommended because you can enjoy different scenery by seasons</p>
+                        <div class="flex">
+                            <p class="heart">100</p>
+                            <p class="comment">5</p>
+                        </div>
+                        </div>
+                    </li>
+                    </a>
+                    <a href="https://www.instagram.com" class="insta-block">
+                    <li>
+                        <img src="images/drink1.jpeg" alt="1">
+                        <div class="description">
+                        <p class="post">I tried matcha sweets for the first time, and they were delicious!</p>
+                        <div class="flex">
+                            <p class="heart">68</p>
+                            <p class="comment">2</p>
+                        </div>
+                        </div>
+                    </li>
+                    </a>
+                    <a href="https://www.instagram.com" class="insta-block">
+                    <li>
+                        <img src="images/drink2.jpeg" alt="1">
+                        <div class="description">
+                        <p class="post">The tranquil scenery of Asakusa heals everything</p>
+                        <div class="flex">
+                            <p class="heart">15</p>
+                            <p class="comment">0</p>
+                        </div>
+                        </div>
+                    </li>
+                    </a>
+                </ul>
+                <a href="https://www.instagram.com" class="follow">FOLLOW</a>
+            </section>
+        </main>
+
+        <footer>
+            <ul class="category">
+                <li>
+                <div class="part">
+                <h2>CONTACT</h2>
+                <ul>
+                    <li>030-1234-5678<br>HELLO@KOMOREBI.COM</li>
+                    <li class="instagram"><a href="https://www.instagram.com" class="icon"><i class="bi bi-instagram"></i></a></li>
+                </ul>
+            </div>
+                </li>
+                <li>
+                    <div class="part">
+                    <h2>OPENING HOURS</h2>
+                    <ul>
+                        <li>10:00AM TIL 18:00PM</li>
+                        <li>PUBLIC HOLIDAYS TBA</li>
+                    </ul>
+                    </div>
+                </li>
+                <li>
+<div class="part">
+                <h2>FIND US</h2>
+                <ul>
+                    <li>SHOP 1, 42 ASAKUSA DR.<br>TAITO-KU 2300</li>
+                    <li class=><a href="https://maps.app.goo.gl/2QghxymjK9V1T1CGA" class="map">I NEED A REAL MAP →</a></li>
+                </ul>
+            </div>
+                </li>
+            </ul>
+            <span>©Komorebi INC.</span>
+        </footer>
+         <!-- jQuery（最優先で一番上） -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <script src="https://code.jquery.com/jquery-migrate-3.3.2.min.js"></script>
+
+        <!-- waypoints -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+  const inner = document.querySelector('.scrolling-text-inner');
+
+  window.addEventListener('scroll', () => {
+    const scrollX = window.scrollY * 0.5;
+    inner.style.transform = `translateX(${-scrollX % inner.offsetWidth}px)`;
+  });
+</script>
+
+<!-- SortableJSの読み込み -->
+<script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+
+        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+        <!-- 最後に、あなたのJS -->
+        <script src="js/main.js"></script>
+    </body>
+    </html>
